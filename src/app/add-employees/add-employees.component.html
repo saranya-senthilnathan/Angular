@@ -1,0 +1,33 @@
+<div>
+<h2>Add Employee</h2>
+<form [formGroup] = "addForm" (ngSubmit)="onSubmit($event)">
+	<div>
+		<label>Id</label>
+		<input type="text" formControlName="id" name="id" placeholder="Id">
+	</div>
+	
+	<div>
+		<label>FirstName</label>
+		<input type="text" formControlName="fname" name="fname" placeholder="FirstName">
+	</div>
+	
+	<div>
+		<label>LastName</label>
+		<input type="text" formControlName="lname" name="lname" placeholder="LastName">
+	</div>
+	
+	<div>
+		<label>Age</label>
+		<input type="text" formControlName="age" name="age" placeholder="Age">
+	</div>
+	
+	<div>
+		<label>Salary</label>
+		<input type="text" formControlName="salary" name="salary" placeholder="Salary">
+	</div>
+	
+	<div>
+		<button>Save</button>
+	</div>
+</form>
+</div>
